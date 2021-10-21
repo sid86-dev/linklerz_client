@@ -1,0 +1,164 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linklerz™ | <%= username %>
+    </title>
+    <!-- favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/favicon/mstile-310x310.png" />
+    <style>
+        body {
+            background: black;
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+            letter-spacing: 2px;
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+
+        .profile-picture {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%;
+            height: auto;
+            max-width: 100px;
+        }
+
+        .profile-name {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid white;
+            border-width: 2px;
+            width: 290px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            transition: color 1s;
+        }
+
+        .bottom-text {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            bottom: 0%;
+        }
+
+        a:hover {
+            color: #000;
+            background: #fff;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        #inner {
+            display: table;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+    </style>
+    <!-- end -->
+</head>
+
+<body>
+
+    <!-- Profile picture-->
+    <!-- <img src="/static/img/sid_dp.jpg" style="width: 50px; height: ;" alt="profile picture" class="profile-picture"> -->
+
+    <!-- Profile name-->
+    <div class="profile-name" style="top: 0%; margin-bottom: 20px;">
+        <%= username %>
+    </div>
+    <div class="center">
+        <!-- Links-->
+        <% if(l0=='noarg' ){ %>
+            <h1></h1>
+            <% } else{ %>
+                <a href="<%= l0 %>" class="links">
+                    <%= n0 %>
+                </a>
+                <% } %>
+                    <% if(l1=='noarg' ){ %>
+                        <h1></h1>
+                        <% } else{ %>
+                            <a href="<%= l1 %>" class="links">
+                                <%= n1 %>
+                            </a>
+                            <% } %>
+                                <% if(l2=='noarg' ){ %>
+                                    <h1></h1>
+                                    <% } else{ %>
+                                        <a href="<%= l2 %>" class="links">
+                                            <%= n2 %>
+                                        </a>
+                                        <% } %>
+                                            <% if(l3=='noarg' ){ %>
+                                                <h1></h1>
+                                                <% } else{ %>
+                                                    <a href="<%= l3 %>" class="links">
+                                                        <%= n3 %>
+                                                    </a>
+                                                    <% } %>
+                                                        <% if(l4=='noarg' ){ %>
+                                                            <h1></h1>
+                                                            <% } else{ %>
+                                                                <a href="<%= l4 %>" class="links">
+                                                                    <%= n4 %>
+                                                                </a>
+                                                                <% } %>
+
+                                                                    <a href="https://linklerz.xyz/" target="_blank">
+                                                                        <div class="bottom-text" style="bottom: 0%;">
+                                                                            Linklerz™</div>
+                                                                    </a>
+
+    </div>
+
+
+</body>
+
+</html>
